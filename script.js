@@ -1,6 +1,10 @@
 function buscarPelicula() {
     var titulo = document.getElementById("titulo-input").value;
-    var url = "http://www.omdbapi.com/?apikey=d4222942&t=" + encodeURIComponent(titulo);
+    //var url = "http://www.omdbapi.com/?apikey=d4222942&t=" + encodeURIComponent(titulo);
+
+    var apiKey = "d4222942";
+    var url = "https://www.omdbapi.com/?apikey=" + apiKey + "&t=" + encodeURIComponent(titulo);
+
   
     var xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);
