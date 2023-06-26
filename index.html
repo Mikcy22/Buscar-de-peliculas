@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <title>Buscador de Películas</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <h1>Buscador de Películas</h1>
+        <input type="text" id="titulo-input" placeholder="Título de la película" onkeydown="buscarConEnter(event)">
+                <button onclick="buscarPelicula()">Buscar</button>
+            <div class="container">
+                
+                <div id="resultado"></div>
+                <div id="descripcion"></div>
+            </div>
+        <script src="script.js"></script>
+    </body>
+</html>

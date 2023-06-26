@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 70vh; /* Ajusta la altura según tus necesidades */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples filas en pantallas pequeñas */
+  }
+  
+  input[type="text"],
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    /* Estilos para pantallas de 768px o más grandes */
+    .container {
+      flex-direction: column;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  
+    input[type="text"],
+    button {
+      width: auto;
+    }
+  }
+  
